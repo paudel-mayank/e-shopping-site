@@ -1,0 +1,58 @@
+
+.brands {
+    padding: 4em 0;
+    background: #eed3b6;
+    margin:4em 0 4em 0;
+    text-align: center;
+}
+.brands-w3l {
+    text-align: center;
+   
+}
+.brands-w3l p a{
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #39c;
+	background: #fff;
+    padding: 16px;
+	display: block;
+	 border: 1px solid #e1e1e1;
+}
+.brands-w3l p a:hover{
+    box-shadow: 0 0 6px 1px #b6b6b6;
+}
+.brands-agile-1 {
+    margin: 10px 0;
+    display:flex;
+}
+.brands-agile-2{
+    display:flex;
+}
+.brands-agile {
+    margin-top: 3em;
+    
+}
+.brands-agile{
+    display:flex;
+    
+}
+.brands-w3l {
+    margin:10px;
+}
+ .brand .container{
+    
+    text-align: center;
+}
+   
+.brands .container h3{
+        border-bottom: 2px solid #b6b6b6;
+        
+        
+    }
+
+
+
+
+    
+    

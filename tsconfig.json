@@ -22,5 +22,11 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  
+  "http.proxy": "http://username:password@hostname:port/",
+"http.proxyAuthorization": null,
+"http.proxyStrictSSL": true
+  
+
 }

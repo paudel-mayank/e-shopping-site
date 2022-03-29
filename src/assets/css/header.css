@@ -1,0 +1,140 @@
+html, body{
+    font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	background:#ffffff;
+}
+ul li,ol li{
+	font-size:14px;
+}
+p{
+	margin:0;
+}
+ul,label{
+	margin:0;
+	padding:0;
+}
+body a:hover{
+	text-decoration:none;
+}
+.agileits_header {
+    background: #333333;
+    padding: 12px 0;
+}
+.w3l_offers {
+    float: left;
+    padding: 9px 0;
+	width: 47%;
+}
+.w3l_search {
+    float: right;
+    width: 25.33%;
+    margin: 0em 0 0em 0em;
+
+}
+
+.w3l_offers p{
+    color:whitesmoke
+}
+.w3l_offers a{
+ text-decoration: none;
+ color:rgb(246, 144, 49)
+}
+.searchIcon FontAwesomeIcon{
+    background-color: #fe9126;
+}
+.header_links{
+    list-style: none;
+    display:flex;
+
+    
+}
+.header_links a{
+    margin: 5px;
+}
+.header_links li{
+    list-style: none;
+}
+
+.w3l_search input[type="search"] {
+    width: 83%;
+    padding:10px;
+    font-size: 14px;
+    color: #999;
+    outline: none;
+    border: 1px solid #cccccc;
+    background: none;
+    -webkit-appearance: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+}
+.header_links a{
+    color:white; 
+    margin-right:10px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.btn-default:hover {
+    background-color:#000;
+    border:none;
+}
+
+button.w3view-cart {
+    background: transparent;
+    border: none;
+}
+button.w3view-cart:focus{
+	outline:none;
+}
+.logo_products {
+    padding: 2em 0;
+}
+.w3ls_logo_products_left {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+}
+.w3ls_logo_products_left h1 a{
+	font-size: 40px;
+    color: #fe9126;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1;
+}
+.w3ls_logo_products_left1 {
+    float: left;
+    margin-top: 0.6em;
+    width: 33.33%;
+}
+.w3ls_logo_products_left1 ul.phone_email li{
+	display:inline-block;
+	color:#212121;
+}
+.w3view-cart {
+    background: #3399cc;
+    border: none;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    outline: none;
+}
+product_list _header{
+    display: flex;
+    align-items: flex-end;
+
+}
+.CartArrowDown{
+  display: flex;
+  align-items: flex-end;
+}
+h1{
+    color:#fe9126;
+    text-transform: uppercase;
+}
+
