@@ -9,7 +9,7 @@ export  const Slideshow :FC=()=>{
     return(
         <>
         <Carousel  >
-                <Carousel.Item interval={1000} >
+     <Carousel.Item interval={1000} >
     <img
       className="d-block h-75 w-100"
       src={require('../assets/images/b1.jpg')}

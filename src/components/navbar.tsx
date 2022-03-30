@@ -5,7 +5,7 @@ export const Navigation :FC=()=>{
     return(
         <>
         <Navbar className="navElements" expand="lg" sticky="top">
-  <Container>
+           <Container>
     
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
@@ -15,7 +15,7 @@ export const Navigation :FC=()=>{
         <NavDropdown title="Groceries" className="navItems">
      
           <NavDropdown.Item href="#action/3.4" className="titleDropdown">All Groceries</NavDropdown.Item>
-          <NavDropdown.Divider />
+                    <NavDropdown.Divider />
           <NavDropdown.Item href="#action/3.1" className='items'> Dals and Pulses</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2" className='items'>Almonds</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.3" className='items'>Cashews</NavDropdown.Item>

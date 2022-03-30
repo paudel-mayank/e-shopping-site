@@ -13,6 +13,91 @@ ul,label{
 	margin:0;
 	padding:0;
 }
+.header {
+    background-color: #333;
+    padding: 12px 0;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .header-elements {
+    padding: 0px 15px;
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .offer {
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 9px 0;
+  }
+  
+  .offer-link {
+    color: #fe9126;
+    text-decoration: none;
+    font-family: "Raleway Bold", sans-serif;
+  }
+  
+  .offer-link:hover {
+    color: #fe9126;
+  }
+  
+  .menu-list {
+    padding: 9px 0;
+    list-style: none;
+    display: flex;
+    font-family: "Raleway Bold";
+    font-size: 14px;
+  }
+  
+  .menu-items {
+    color: #fff;
+    text-decoration: none;
+    margin: 0px 15px;
+  }
+  
+  .cart-icon {
+    color: #fff;
+    font-size: large;
+    padding: 1px 6px;
+  }
+  
+  .offer-text,
+  .menu-list {
+    margin-bottom: 0px;
+  }
+  
+  /* Media Query */
+  
+  @media (max-width: 768px) {
+    .header-elements {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .menu-items {
+      margin: 0px 10px;
+    }
+  
+    .offer {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .offer,
+    .menu-list {
+      font-size: 12px;
+    }
+    .offer-link {
+      display: block;
+    }
+  }
+  
 body a:hover{
 	text-decoration:none;
 }

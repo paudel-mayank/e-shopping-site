@@ -1,7 +1,8 @@
 import React,{FC} from 'react';
 import {Link} from "react-router-dom";
 //bootstrap
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {Container} from '@mui/material';
+ 
 
 //css file
 import '../assets/css/header.css';
@@ -14,32 +15,44 @@ import { faCartArrowDown as Cart } from '@fortawesome/free-solid-svg-icons';
 export const Header : FC = ()=>{
     return(
         <>
-        <div className="agileits_header">
-		<div className="container">
-			<div className="w3l_offers">
-				<p>SALE UP TO 70% OFF. USE CODE "SALE70%" . 
-                    <a href="products.html" className="link-success">SHOP NOW</a></p>
-			</div>
-			<div className="agile-login">
-				<ul className='header_links'>
-					<li><a href="registered.html"> Create Account </a></li>
-					<li><a href="login.html">Login</a></li>
-					<li><a href="contact.html">Help</a></li>
-					
-				</ul>
-			</div>
-			<div className="product_list_header">  
-					<form action="#" method="post" className="last"> 
-						<input type="hidden" name="cmd" value="_cart"/>
-						<input type="hidden" name="display" value="1"/>
-						<button className="w3view-cart" type="submit" name="submit" value="">
-                        <FontAwesomeIcon icon={Cart} aria-hidden='true' size='lg' color="white" className="CartArrowDown" />
-                            </button>
-					</form>  
-			</div>
-			<div className="clearfix"> </div>
-		</div>
-	</div>
+        <div className="header">
+      <Container>
+        <div className="header-elements">
+          <div className="offer">
+            <p className="offer-text">
+              SALE UP TO 70% OFF. USE CODE "SALE70%" .{" "}
+              <Link className="links offer-link" to="/products">
+                SHOP NOW
+              </Link>
+            </p>
+          </div>
+          <div className="menu">
+            <ul className="menu-list">
+              <li>
+                <Link className="links menu-items" to="/registered">
+                  Create Account
+                </Link>
+              </li>
+              <li>
+                <Link className="links menu-items" to="/login">
+                  Login
+                </Link>
+              </li>
+              <li>
+                <Link className="links menu-items" to="/contact">
+                  Help
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <Link className="links cart-icon" to="/cart">
+              <FontAwesomeIcon icon={Cart} />
+            </Link>
+          </div>
+        </div>
+      </Container>
+	  </div>
 
 	<div className="logo_products">
 		<div className="container">
