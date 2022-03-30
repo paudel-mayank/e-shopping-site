@@ -5,7 +5,8 @@ import React,{FC} from 'react';
 
 import {Slider} from "../components/slider";
 import {Slideshow} from '../components/slideShowImages';
-import { Brandstore} from '../components/brandstore'
+import { Brandstore} from '../components/brandstore';
+import {DisplayImages} from "../components/displayimages";
 
 export  const Home: FC=()=>{
     return(
@@ -14,6 +15,7 @@ export  const Home: FC=()=>{
            
            <Slider/>
            <Slideshow/>
+           <DisplayImages/>
            <Brandstore/>
            
          
