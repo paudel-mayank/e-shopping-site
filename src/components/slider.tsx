@@ -9,8 +9,8 @@ export  const Slider :FC=()=>{
     return(
         <>
         <Carousel  >
-                <Carousel.Item interval={3000} >
-    <img
+                <Carousel.Item interval={1000} >
+           <img
       className="d-block h-75 w-100"
       src={require('../assets/images/44.jpg')}
       alt="First slide"

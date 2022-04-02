@@ -1,8 +1,10 @@
 import React ,{FC}from "react";
+import Breadcrumb from "../components/breadcrumbs";
 
 export const Register :FC=()=>{
     return(
         <>
+<Breadcrumb currentPage="Register"/>
        <div className="register">
 		<div className="container">
 			<h2>Register Here</h2>

@@ -1,18 +1,19 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import{BrowserRouter as Router,Routes, Route} from 'react-router-dom';
-import './App.css'
+
 
 import {Header} from './components/header';
 import { Navigation } from './components/navbar';
 import {Home} from "./pages/home";
-
+import {Contact} from './pages/contact';
 import {Offer} from './pages/offers';
 import { Register } from './pages/registered';
-import { Products} from './pages/products'; 
+
 import {Login} from "./pages/login";
 import {Footer } from './components/footer';
-
+import {Faq} from "./pages/faq";
+import {AboutUs} from "./pages/aboutus";
 
 
 
@@ -26,8 +27,12 @@ function App() {
             <Route path='/' element={<Home/>}/>
             <Route path="/Offers" element={<Offer/>} />
             <Route path="/registered" element={<Register />} />
-            <Route path="/products" element={<Products />} />
+            {/* <Route path="/products" element={<Products />} /> */}
             <Route path="/login" element={< Login/>}/>
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/aboutus' element={<AboutUs/>}/>
+            <Route path ='/faq' element ={<Faq/>}/>
+            
           </Routes>
           <Footer/>
   </Router>

@@ -22,7 +22,7 @@ export const Login :FC=()=>{
 			</form>
 		</div>
 		<h4>For New People</h4>
-		<p><Link to='/registere' />Register Here(Or) go back to <Link to ='/'/>Home<span className="glyphicon glyphicon-menu-right" aria-hidden="true"></span></p>
+		<p><Link to='/registered' />Register Here(Or) go back to <Link to ='/home'/>Home<span className="glyphicon glyphicon-menu-right" aria-hidden="true"></span></p>
 	</div>
 </div>
         </>

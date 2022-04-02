@@ -49,16 +49,23 @@
         display:flex;
         flex-direction: column;
         margin:5px;
+        justify-content: center;
+        align-items: center;
     }
     .brands-agile-1{
         display:flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
     }
     .brands-agile-2{
         display:flex;
         flex-direction:column;
+        justify-content: center;
+        align-items: center;
     }
+
     
 }
 

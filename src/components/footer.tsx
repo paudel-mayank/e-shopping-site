@@ -1,15 +1,13 @@
 import React,{FC} from 'react';
+import {Link} from 'react-router-dom';
 
 import "../assets/css/footer.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowRight, faMapMarker,faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faTwitter, faDribbble,faVimeo}  from '@fortawesome/free-brands-svg-icons';
  
-export const Footer:FC=()=>{
+export const Footer :FC=()=>{
      return(
          <>
           <div className="footer">
@@ -27,30 +25,30 @@ export const Footer:FC=()=>{
 				<div className="col-md-3 w3_footer_grid">
 					<h3>Information</h3>
 					<ul className="info"> 
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true" className="arrowIcon"/><a href="about.html">About Us</a></li>
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><a href="contact.html">Contact Us</a></li>
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><a href="short-codes.html">Short Codes</a></li>
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><a href="faq.html">FAQ's</a></li>
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><a href="products.html">Special Products</a></li>
+						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true" className="arrowIcon"/><Link to='/aboutus'> About Us</Link> </li>
+						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to='/contact'>Contact Us</Link></li>
+						
+						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to="/faq">FAQ's</Link></li>
+						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to="/products">Special Products</Link></li>
 					</ul>
 				</div>
 				<div className="col-md-3 w3_footer_grid">
 					<h3>Category</h3>
 					<ul className="info"> 
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><a href="groceries.html">Groceries</a></li>
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><a href="household.html">Household</a></li>
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><a href="personalcare.html">Personal Care</a></li>
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><a href="packagedfoods.html">Packaged Foods</a></li>
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><a href="beverages.html">Beverages</a></li>
+						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to='/groceries'>Groceries</Link></li>
+						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to="/household">Household</Link></li>
+						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to="/personalcare">Personal Care</Link></li>
+						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to="/packagedfoods">Packaged Foods</Link></li>
+						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to="/beverages">Beverages</Link></li>
 					</ul>
 				</div>
 				<div className="col-md-3 w3_footer_grid">
 					<h3>Profile</h3>
 					<ul className="info"> 
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><a href="products.html">Store</a></li>
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><a href="checkout.html">My Cart</a></li>
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><a href="login.html">Login</a></li>
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><a href="registered.html">Create Account</a></li>
+						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to="/products">Store</Link></li>
+						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to="/checkout">My Cart</Link></li>
+						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to="/login">Login</Link></li>
+						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to="/registered">Create Account</Link></li>
 					</ul>
 				</div>
 				<div className="clearfix"> </div>
