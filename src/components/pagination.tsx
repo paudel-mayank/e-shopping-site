@@ -9,7 +9,7 @@ export const Pagination :FC=()=>{
         <ul className="pagination paging">
           <li>
             <Link to="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
+              <span aria-hidden="true"></span>
             </Link>
           </li>
           <li className="active">

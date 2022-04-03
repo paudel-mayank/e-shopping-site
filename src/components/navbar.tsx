@@ -14,9 +14,9 @@ export const Navigation :FC=()=>{
         
         <NavDropdown title="Groceries" className="navItems">
      
-          <NavDropdown.Item href="#action/3.4" className="titleDropdown">All Groceries</NavDropdown.Item>
+          <NavDropdown.Item href="/groceries" className="titleDropdown">All Groceries</NavDropdown.Item>
                     <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.1" className='items'> Dals and Pulses</NavDropdown.Item>
+          <NavDropdown.Item  className='itepathms'> Dals and Pulses</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2" className='items'>Almonds</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.3" className='items'>Cashews</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.1" className="items"> Dry Fruit</NavDropdown.Item>
@@ -26,7 +26,7 @@ export const Navigation :FC=()=>{
         </NavDropdown>
         <NavDropdown title="Household" className="navItems">
      
-          <NavDropdown.Item href="#action/3.4" className="titleDropdown">All Household</NavDropdown.Item>
+          <NavDropdown.Item href="/household" className="titleDropdown">All Household</NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item href="#action/3.1" className="items"> Cookware</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2" className="items">Scrubbers</NavDropdown.Item>
@@ -38,7 +38,7 @@ export const Navigation :FC=()=>{
         </NavDropdown>
         <NavDropdown title="PersonalCare" className="navItems">
      
-          <NavDropdown.Item href="#action/3.4" className="titleDropdown">Baby care</NavDropdown.Item>
+          <NavDropdown.Item href="/personalcare" className="titleDropdown">Baby care</NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item href="#action/3.1" className="items"> Baby Care Accessories</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2" className="items">Baby Oil and Shampoo </NavDropdown.Item>
@@ -50,7 +50,7 @@ export const Navigation :FC=()=>{
         </NavDropdown>
         <NavDropdown title="Packaged Foods" className='navItems'>
      
-          <NavDropdown.Item href="#action/3.4" className="titleDropdown"> All Accessories</NavDropdown.Item>
+          <NavDropdown.Item href="/packagedfoods" className="titleDropdown"> All Accessories</NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item href="#action/3.1" className="items"> Baby Food</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2" className="items">Dessert Items </NavDropdown.Item>
@@ -64,7 +64,7 @@ export const Navigation :FC=()=>{
 
         <NavDropdown title="Beverages" className='navItems'>
      
-          <NavDropdown.Item href="#action/3.4" className="titleDropdown"> Tea and Coffee</NavDropdown.Item>
+          <NavDropdown.Item href="/beverages" className="titleDropdown"> Tea and Coffee</NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item href="#action/3.1" className="items"> Green Tea</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2" className="items">Ground Coffee </NavDropdown.Item>
@@ -75,9 +75,9 @@ export const Navigation :FC=()=>{
 
      
         </NavDropdown>
-        <Nav.Link href="#home" className="navItems" >Gourmet</Nav.Link>
-        <Nav.Link href="#home" className="navItems" >Offers</Nav.Link>
-        <Nav.Link href="#home" className="navItems" >Contact</Nav.Link>
+        <Nav.Link href="/gourmet" className="navItems" >Gourmet</Nav.Link>
+        <Nav.Link href="/offers" className="navItems" >Offers</Nav.Link>
+        <Nav.Link href="/contact" className="navItems" >Contact</Nav.Link>
 
         
       </Nav>
