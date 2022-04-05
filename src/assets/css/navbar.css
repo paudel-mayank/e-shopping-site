@@ -1,13 +1,14 @@
-.navElements{
-    background-color: #fe9126 ;
-    color:white;
+.navbar-light .navbar-nav .nav-link {
+  color:white;
+  text-decoration: none;
 }
-.titleDropdown{
-  color:#fe9126;
-  font-size: 1.4rem;
-  font-weight: 700;
+.multi-column-dropdown{
+  padding:3px;
+  text-align:center;
+  text-decoration: none;
+  
 }
-.navItems{
-  color:rgb(253, 253, 253);
+.menus{
+  text-decoration:none;
   
 }

@@ -11,7 +11,7 @@ export  const Slider :FC=()=>{
                 <Carousel.Item interval={1000} >
            <img
       className="d-block h-75 w-100"
-      src={require('../assets/images/44.jpg')}
+      src={require('../../assets/images/44.jpg')}
       alt="First slide"
     />
     <Carousel.Caption>
@@ -21,7 +21,7 @@ export  const Slider :FC=()=>{
   <Carousel.Item>
     <img
       className="d-block h-75 w-100"
-      src={require("../assets/images/11.jpg")}
+      src={require("../../assets/images/11.jpg")}
       alt="Second slide"
     />
 
@@ -33,7 +33,7 @@ export  const Slider :FC=()=>{
   <Carousel.Item>
     <img
       className="d-block h-75 w-100"
-      src={require("../assets/images/22.jpg")}
+      src={require("../../assets/images/22.jpg")}
       alt="Third slide"
     />
 

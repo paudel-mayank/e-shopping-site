@@ -3,11 +3,46 @@ import {Link} from 'react-router-dom';
 
 import "../assets/css/footer.css";
 
+import { useState, useEffect } from "react";
+import { Root } from "../interfaces/categoryinterface";
+import axios from "axios";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowRight, faMapMarker,faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faTwitter, faDribbble,faVimeo}  from '@fortawesome/free-brands-svg-icons';
  
+
+
+
+
+
 export const Footer :FC=()=>{
+	const [categories,setCategories]=useState<Root>();
+    const warehouse_id = 1;
+    const apiKey:any = "q0eq7VRCxJBEW6n1EJkHy4qNLgaS86ztm8DYhGMqerV1eldXa6"
+  
+
+    useEffect(() => {
+        const getCategory = async () => {
+          try {
+            const config = {
+              headers: {
+                  "Api-Key": apiKey,
+                  "Warehouse-Id": warehouse_id
+                },
+            };
+            const response = await axios.get(`https://uat.ordering-dalle.ekbana.net/api/v4/category`, config);
+    
+            if (response.status === 200) {
+              setCategories(response.data);
+            }
+          } catch (e) {
+            console.log("Error on page", e);
+          }
+        };
+        getCategory();
+    
+      },[categories]);
      return(
          <>
           <div className="footer">
@@ -35,11 +70,16 @@ export const Footer :FC=()=>{
 				<div className="col-md-3 w3_footer_grid">
 					<h3>Category</h3>
 					<ul className="info"> 
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to='/groceries'>Groceries</Link></li>
+						{/* <li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to='/groceries'>Groceries</Link></li>
 						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to="/household">Household</Link></li>
 						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to="/personalcare">Personal Care</Link></li>
 						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to="/packagedfoods">Packaged Foods</Link></li>
-						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to="/beverages">Beverages</Link></li>
+						<li><FontAwesomeIcon icon={faArrowRight} aria-hidden="true"className="arrowIcon"/><Link to="/beverages">Beverages</Link></li> */}
+
+						{categories && categories.data.map((category)=>
+						(
+						<li>	<FontAwesomeIcon icon={faArrowRight} aria-hidden="true" className='arrowIcon'/> <Link to ={"/" + category.title.toLocaleLowerCase()}>{category.title[0]+ category.title.slice(1).toLowerCase()}</Link></li>
+						))}
 					</ul>
 				</div>
 				<div className="col-md-3 w3_footer_grid">

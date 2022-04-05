@@ -1,4 +1,5 @@
  import {FC} from 'react';
+
  export const NewOffer :FC=()=>{
      return(
               <>
@@ -10,13 +11,13 @@
 						<div className="hover14 column">
 							<div className="agile_top_brand_left_grid">
 								<div className="agile_top_brand_left_grid_pos">
-									<img src={require("../assets/images/offer.png")} alt=" " className="img-responsive"/>
+									<img src={require("../../assets/images/offer.png")} alt=" " className="img-responsive"/>
 								</div>
 								<div className="agile_top_brand_left_grid1">
 									<figure>
 										<div className="snipcart-item block">
 											<div className="snipcart-thumb">
-												<a href="products.html"><img title=" " alt=" " src={require('../assets/images/14.png')}/></a>		
+												<a href="products.html"><img title=" " alt=" " src={require('../../assets/images/14.png')}/></a>		
 												<p>Fried-gram</p>
 												<div className="stars">
 													<i className="fa fa-star blue-star" aria-hidden="true"></i>
@@ -53,13 +54,13 @@
 						<div className="hover14 column">
 							<div className="agile_top_brand_left_grid">
 								<div className="agile_top_brand_left_grid_pos">
-									<img src={require("../assets/images/offer.png")} alt=" " className="img-responsive"/>
+									<img src={require("../../assets/images/offer.png")} alt=" " className="img-responsive"/>
 								</div>
 								<div className="agile_top_brand_left_grid1">
 									<figure>
 										<div className="snipcart-item block">
 											<div className="snipcart-thumb">
-												<a href="products.html"><img title=" " alt=" " src={require("../assets/images/15.png")}/></a>		
+												<a href="products.html"><img title=" " alt=" " src={require("../../assets/images/15.png")}/></a>		
 												<p>Navaratan-dal</p>
 												<div className="stars">
 													<i className="fa fa-star blue-star" aria-hidden="true"></i>
@@ -96,16 +97,16 @@
 						<div className="hover14 column">
 							<div className="agile_top_brand_left_grid">
 								<div className="agile_top_brand_left_grid_pos">
-									<img src={require("../assets/images/offer.png")} alt=" " className="img-responsive"/>
+									<img src={require("../../assets/images/offer.png")} alt=" " className="img-responsive"/>
 								</div>
 								<div className="agile_top_brand_left_grid_pos">
-									<img src={require("../assets/images/offer.png")} alt=" " className="img-responsive"/>
+									<img src={require("../../assets/images/offer.png")} alt=" " className="img-responsive"/>
 								</div>
 								<div className="agile_top_brand_left_grid1">
 									<figure>
 										<div className="snipcart-item block">
 											<div className="snipcart-thumb">
-												<a href="products.html"><img src={require("../assets/images/16.png")} alt=" " className="img-responsive"/></a>
+												<a href="products.html"><img src={require("../../assets/images/16.png")} alt=" " className="img-responsive"/></a>
 												<p>White-peasmatar</p>
 												<div className="stars">
 													<i className="fa fa-star blue-star" aria-hidden="true"></i>
@@ -142,13 +143,13 @@
 						<div className="hover14 column">
 							<div className="agile_top_brand_left_grid">
 								<div className="agile_top_brand_left_grid_pos">
-									<img src={require("../assets/images/offer.png")} alt=" " className="img-responsive"/>
+									<img src={require("../../assets/images/offer.png")} alt=" " className="img-responsive"/>
 								</div>
 								<div className="agile_top_brand_left_grid1">
 									<figure>
 										<div className="snipcart-item block">
 											<div className="snipcart-thumb">
-												<a href="products.html"><img title=" " alt=" " src={require("../assets/images/17.png")}/></a>		
+												<a href="products.html"><img title=" " alt=" " src={require("../../assets/images/17.png")}/></a>		
 												<p>Channa-dal</p>
 												<div className="stars">
 													<i className="fa fa-star blue-star" aria-hidden="true"></i>
